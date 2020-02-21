@@ -7,6 +7,7 @@ Description : Website containing documentation about the topics covered thus far
 - Powershell / Bash terminal
 - Javascript
 - Node
+- Express
 - HTML
 - CSS
 - jQuery
