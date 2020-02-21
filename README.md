@@ -4,13 +4,13 @@ Description : Website containing documentation about the topics covered thus far
 
 # Topics
 
-Powershell / Bash terminal
-Javascript
-Node
-HTML
-CSS
-jQuery
-...
+- Powershell / Bash terminal
+- Javascript
+- Node
+- HTML
+- CSS
+- jQuery
+- (...)
 
 
 
