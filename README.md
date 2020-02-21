@@ -1,4 +1,4 @@
-# Mandatory1 - 4th Semester - Node.js
+# Mandatory_1 - 4th Semester - Node.js
 
 Description : Website containing documentation about the topics covered thus far in the Node.js course
 
