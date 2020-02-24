@@ -9,6 +9,11 @@ app.get("/", (req,res) => {
     res.send(response);
 });
 
+app.get("/index", (req, res) => {
+    console.log(__dirname)
+    return res.sendFile(__dirname + '/public/index.html');
+});
+
 
 
 app.listen(3000, error =>{
