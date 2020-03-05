@@ -1,8 +1,14 @@
 //import express, request
-const app=require("express")();
-const request=require("request");
+const express = require ("express");
+const app = express();
+const request = require("request");
 
-// teste if server is running
+
+// load css file
+app.use(express.static('public'));
+
+
+// test if server is running
 app.get("/", (req,res) => {
     const response = {
         response: "test server"

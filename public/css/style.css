@@ -1,0 +1,36 @@
+/* sidebar menu */
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed; /* fixed sidebar */
+    z-index: 1; /* stay at top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; /* disable horizontal scroll */
+    padding-top: 20px; 
+}
+
+/* navigation menu links */
+
+.sidenav a { 
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+}
+
+/* when mouse hovers navigation links, changes color */
+
+.sidenav a:hove {
+    color: #f1f1f1;
+}
+
+/* style page content */
+
+.main {
+    margin-left: 160px; /* same as width of the sidebar */
+    padding: 0px 10px;
+}
