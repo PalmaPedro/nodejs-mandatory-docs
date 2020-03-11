@@ -6,27 +6,31 @@ html, body {
 
 #main {
     min-height:100%;
-    display:table;
-    width:100%;
-    height:100%;
+    width:100%;  
 }
 
-#leftBar, #rightBar {
+#leftBar{
     background: #d9d9d9;
     width:20%;
-    display:table-cell;
+    display: table-cell
+}
+#rightBar{
+    background: #d9d9d9;
+    height: 100%;
+    width:20%;
+    display: table-cell
+    
 }
 /* start left section */
 .caption{
     color: #3a7ca8;
     height: 32px;
-    display: inline-block;
+    display: block;
     line-height: 32px;
     padding: 0 1.1em;
-    margin: 20px 0 0 0;
+    margin: 15px 0 0 0;
     font-weight: bold;
 }
-
 
 .sidenav{
     background-color: #343131;
@@ -40,12 +44,18 @@ html, body {
     text-decoration: none;
     font-size: 14px;
     color: #d9d9d9;
-    display: block;
+    display: table;
 }
-
-
+/* when mouse hovers navigation links, changes color */
+.sidenav a:hover {
+    background-color: #9e9696;
+}
 /* end left section */
 /* start center section */
+/*
+.round {
+    border-radius: 50%;
+  }*/
 #content {
     min-height: 100%;
     display:table-cell;
@@ -55,24 +65,27 @@ html, body {
 
 #header {
     background: #f8f9fe;
-    height:5%;
+    height:10%;
     text-align: center;
 }
 #body {
  min-height:80%;
+ text-align: justify;
+ margin-left: 3.2em;
+ margin-right: 3.2em;
  overflow:hidden;
 }
 #footer {
  background: #f8f9fe;
- height:5%;
+ height:10%;
  text-align: center;
 }
 /* end center section */
 /*  theme change */
 hr { 
     display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     margin-left: 3.2em;
     margin-right: 3.2em;
     border-style: inset;

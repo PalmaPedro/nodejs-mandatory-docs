@@ -22,13 +22,24 @@ app.get("/index", (req, res) => {
     return res.sendFile(__dirname + '/public/index.html');
 });
 
-// sets up first page of the table of contents
+// serving pages
 app.get("/about", (req,res) => {
     console.log(__dirname)
     return res.sendFile(__dirname + '/public/1._about.html');
 });
 
-//set
+app.get("/terminal", (req,res) => {
+    console.log(__dirname)
+    return res.sendFile(__dirname + '/public/2._terminal.html');
+});
+
+
+app.get("/install", (req,res) => {
+    console.log(__dirname)
+    return res.sendFile(__dirname + '/public/3._install.html');
+});
+
+
 
 
 
