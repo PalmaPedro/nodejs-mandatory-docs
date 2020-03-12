@@ -12,7 +12,7 @@
         <div id="main">
             <div id="leftBar"> <!-- starts left section -->
                 <div class=sidenav>
-                    <div class="w3-padding w3-xlarge w3-blue">
+                    <div class="w3-padding w3-large w3-blue w3-center">
                         <i class="fa fa-home"></i>
                         node.js
                       </div>
@@ -24,21 +24,21 @@
                         <li><a href="terminal">Using the terminal</a></li>
                         <li><a href="install">Setting up node</a></li>
                         <li><a href="frameworks">Frameworks: express.js</a></li>
-                        <li><a href="running-node">Utilities: Nodemon</a></li>
-                        <li><a href="API's">API's</a></li>
-                        <li><a href="REST">REST</a></li>
+                        <li><a href="running">Utilities: Nodemon</a></li>
                         <li><a href="js-basics">Javascript basics</a></li>
-                        <li><a href="jquery">jQuery</a></li>
-                        <li><a href="requests">Http requests</a></li>
                         <li><a href="html-basics">Html basics</a></li>
                         <li><a href="css-basics">CSS basics</a></li>
+                        <li><a href="jquery">jQuery</a></li>
+                        <li><a href="api">API's</a></li>
+                        <li><a href="rest">REST</a></li>
+                        <li><a href="requests">Http requests</a></li>
                         <li><a href="tutorial">Tutorials</a></li>
                     </ul>
                 </div>
             </div> <!-- ends left section-->
             <!-- center section -->
             <div id="content" class="inner">
-                <div id="header"><span id="left">Left</span></div>
+                <div id="header"><span id="left"><span id="right">click!</span></span></div>
                 <hr>
                 <div id="body">
                     <h2>Title</h2>
@@ -86,6 +86,9 @@
     <script>
     $("#left").click(function () {
         $("#leftBar").toggle();
+       })
+       $("#right").click(function () {
+        $("#rightBar").toggle();
        })
     </script>
 </html>

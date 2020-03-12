@@ -29,6 +29,10 @@ html, body {
     line-height: 32px;
     padding: 0 1.1em;
     margin: 15px 0 0 0;
+    position:relative;
+    top:15px;
+    left: 30px;
+    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -66,6 +70,8 @@ html, body {
 #header {
     background: #f8f9fe;
     height:10%;
+    position:relative;
+    top: 15px;
     text-align: center;
 }
 #body {
@@ -77,15 +83,16 @@ html, body {
 }
 #footer {
  background: #f8f9fe;
- height:10%;
+ position:relative;
+ bottom: 15px;
  text-align: center;
 }
 /* end center section */
 /*  theme change */
 hr { 
     display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     margin-left: 3.2em;
     margin-right: 3.2em;
     border-style: inset;
