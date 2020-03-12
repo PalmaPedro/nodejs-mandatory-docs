@@ -22,7 +22,7 @@ app.get("/index", (req, res) => {
     return res.sendFile(__dirname + '/public/index.html');
 });
 
-app.get("/what-is-node", (req,res) => {
+app.get("/node", (req,res) => {
     console.log(__dirname)
     return res.sendFile(__dirname + '/public/1._node.html');
 });
