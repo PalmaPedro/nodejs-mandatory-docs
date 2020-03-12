@@ -16,16 +16,15 @@ app.get("/", (req,res) => {
     res.send(response);
 });
 
-// set up a table of contents which have links to each topic
+// serving website content
 app.get("/index", (req, res) => {
     console.log(__dirname)
     return res.sendFile(__dirname + '/public/index.html');
 });
 
-// serving pages
-app.get("/about", (req,res) => {
+app.get("/what-is-node", (req,res) => {
     console.log(__dirname)
-    return res.sendFile(__dirname + '/public/1._about.html');
+    return res.sendFile(__dirname + '/public/1._node.html');
 });
 
 app.get("/terminal", (req,res) => {
@@ -83,10 +82,10 @@ app.get("/api", (req,res) => {
 
 app.get("/rest", (req,res) => {
     console.log(__dirname)
-    return res.sendFile(__dirname + '/public/11._REST.html');
+    return res.sendFile(__dirname + '/public/11._rest.html');
 });
 
-app.get("/request", (req,res) => {
+app.get("/requests", (req,res) => {
     console.log(__dirname)
     return res.sendFile(__dirname + '/public/12._requests.html');
 });

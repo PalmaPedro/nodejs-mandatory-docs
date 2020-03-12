@@ -3,10 +3,12 @@ html, body {
     min-height:100%;
   
 }
+.w3-padding{
+    min-width: 100%;
+}
 
 #main {
     min-height:100%;
-    width:100%;  
 }
 
 #leftBar{
@@ -16,7 +18,6 @@ html, body {
 }
 #rightBar{
     background: #d9d9d9;
-    min-height: 100%;
     width:20%;
     display: table-cell
     
@@ -54,6 +55,7 @@ html, body {
 /* when mouse hovers navigation links, changes color */
 .sidenav a:hover {
     background-color: #9e9696;
+    min-width: 100%;
 }
 /* end left section */
 /* start center section */
