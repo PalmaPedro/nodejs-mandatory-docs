@@ -1,7 +1,6 @@
 html, body {
     margin: 0px;
     height:100%;
-    
   
 }
 .w3-padding{
@@ -83,6 +82,10 @@ html, body {
  margin-left: 3.2em;
  margin-right: 3.2em;
  overflow:hidden;
+}
+
+#body h1, h2{
+    font-weight: 600;
 }
 #footer {
  background: #f8f9fe;
