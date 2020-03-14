@@ -1,6 +1,7 @@
-//import express, request
+//import express
 const express = require ("express");
 const app = express();
+//const request = require("request");
 
 // load css file
 app.use(express.static('public'));
