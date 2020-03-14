@@ -1,12 +1,9 @@
 //import express, request
 const express = require ("express");
 const app = express();
-const request = require("request");
-
 
 // load css file
 app.use(express.static('public'));
-
 
 // test if server is running
 app.get("/", (req,res) => {
@@ -39,9 +36,9 @@ app.get("/install", (req,res) => {
 });
 
 
-app.get("/frameworks", (req,res) => {
+app.get("/running", (req,res) => {
     console.log(__dirname)
-    return res.sendFile(__dirname + '/public/4._frameworks.html');
+    return res.sendFile(__dirname + '/public/4._running.html');
 });
 
 
@@ -53,50 +50,18 @@ app.get("/running", (req,res) => {
 
 app.get("/js-basics", (req,res) => {
     console.log(__dirname)
-    return res.sendFile(__dirname + '/public/6._javascript_basics.html');
+    return res.sendFile(__dirname + '/public/5._javascript_basics.html');
 });
-
-
-app.get("/html-basics", (req,res) => {
-    console.log(__dirname)
-    return res.sendFile(__dirname + '/public/7._html_basics.html');
-});
-
-
-app.get("/css-basics", (req,res) => {
-    console.log(__dirname)
-    return res.sendFile(__dirname + '/public/8._css_basics.html');
-});
-
 
 app.get("/jquery", (req,res) => {
     console.log(__dirname)
-    return res.sendFile(__dirname + '/public/9._jquery.html');
-});
-
-
-app.get("/api", (req,res) => {
-    console.log(__dirname)
-    return res.sendFile(__dirname + '/public/10._api.html');
-});
-
-app.get("/rest", (req,res) => {
-    console.log(__dirname)
-    return res.sendFile(__dirname + '/public/11._rest.html');
+    return res.sendFile(__dirname + '/public/6._jquery.html');
 });
 
 app.get("/requests", (req,res) => {
     console.log(__dirname)
-    return res.sendFile(__dirname + '/public/12._requests.html');
+    return res.sendFile(__dirname + '/public/7._requests.html');
 });
-
-app.get("/tutorial", (req,res) => {
-    console.log(__dirname)
-    return res.sendFile(__dirname + '/public/13._tutorial.html');
-});
-
-
-
 
 
 // messages giving status of the server
