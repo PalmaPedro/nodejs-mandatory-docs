@@ -2,17 +2,13 @@
 
 Description : Website containing documentation about the topics covered thus far in the Node.js course
 
-# Topics
+To run:
 
-- Powershell / Bash terminal
-- Javascript
-- Node
-- Express
-- HTML
-- CSS
-- jQuery
-- (...)
-- Tutorial - Create a simple website with node.js
+1) Run app.js with "nodemon app.js"
+2) Type in the browser "localhost:3000/index"
+
+
+
 
 
 

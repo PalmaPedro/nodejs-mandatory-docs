@@ -40,54 +40,43 @@
                     <p>This section will follow the exercise covered in class.</p>
                     <h3>Using Postman</h3>
                     <p>Postman is a tool used to test API's making it easier to make Http requests (among other request methods) and it is needed
-                        for making POST requests.
+                        for making POST and PUT requests.
                     </p>
-                    <p>Before start using Postman a dependency must be added to the project. In the same directory as the app.js, typing in the command line
-                        <figure>
-                            <img src="images/19._install_body_parser.png" alt="body-parser" class="images">
-                            <figcaption id="figcaption">Fig.15 installing body-parser</figcaption>
-                    </figure>
-                    </p>
-                    <p>Once that is installed, on the top of the app.js file, the following must be included (below the express import and instantiation)</p>
+                    <p>Before start using Postman, however, there is a need to include Express's middleware to deal with the (incoming) data (object) in the body of the request
+                    <p>On the top of the app.js file, the following  <b>middleware</b> must be included (below the express import and instantiation).
+                    These middleware are functions that are called between processing the Request and sending the Response in the application method.
+                    It is only needed for POST and PUT requests, because in both these requests, data is being sent (in the form of some data object)
+                    to the server, and it is asked from the server to accept or store this data (object) which is enclosed in the request body( i.e <i>req.body</i>) of that
+                    POST or PUT request.
+                    </i></p>
                     <figure>
                         <img src="images/20._app_body_parser.png" alt="app-express-body-parser" class="images">
-                        <figcaption id="figcaption">Fig.16 include body-parser </figcaption>
+                        <figcaption id="figcaption">Fig.15 middleware needed for POST and PUT requests </figcaption>
                     </figure>
                     <h3>Adding GET request endpoint</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-                        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae 
-                        est. Mauris placerat eleifend leo
+                    <p>This is going to be the GET request endpoint.
                     </p>
                     <figure>
                         <img src="images/24._get_endpoint.png" alt="get-endpoint" class="images">
-                        <figcaption id="figcaption">Fig.17 get endpoint </figcaption>
+                        <figcaption id="figcaption">Fig.16 get endpoint </figcaption>
                     </figure>
                     <h3>Adding a POST request endpoint</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-                        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae 
-                        est. Mauris placerat eleifend leo
+                    <p>This is going to be the POST request endpoint for the 'cars' route. The 'new car' data sent to the server is 
+                        going to be stored in the <i>req.body</i> and then <i>push</i> the data into the 'cars' array.
                     </p>
                     <figure>
                         <img src="images/21._post_endpoint.png" alt="post-endpoint" class="images">
-                        <figcaption id="figcaption">Fig.18 post endpoint </figcaption>
+                        <figcaption id="figcaption">Fig.17 post endpoint </figcaption>
                     </figure>
                     <h3>Adding a PUT request endpoint</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-                        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae 
-                        est. Mauris placerat eleifend leo
+                    <p>This is going to be the PUT request endpoint.
                     </p>
                     <figure>
                         <img src="images/22._put_endpoint.png" alt="put-endpoint" class="images">
-                        <figcaption id="figcaption">Fig.19 put endpoint </figcaption>
+                        <figcaption id="figcaption">Fig.18 put endpoint </figcaption>
                     </figure>
                     <h3>Adding a DELETE request endpoint</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-                        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae 
-                        est. Mauris placerat eleifend leo
+                    <p>This is going to be the DELETE request endpoint
                     </p>
                     <figure>
                         <img src="images/23._delete_endpoint.png" alt="delete-endpoint" class="images">

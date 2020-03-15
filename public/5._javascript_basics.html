@@ -38,33 +38,72 @@
                 <div id="body">
                     <h2>Javascript basics</h2>
                     <p>Node.js enables developers to execute Javascript code outside the browser. It is therefore 
-                    important to go through the fundamentals of the Javascript programming language here, as it was
+                    important to go through some topics of the Javascript programming language here, as it was
                     also covered during this course.
                     </p>
                     <h3>Variables (let / const)</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-                        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae 
-                        est. Mauris placerat eleifend leo
+                    <p>JavaScript variables are containers for storing data values. ES2015 introduced two important
+                        new JavaScript keywords: let and const. These two keywords provide Block Scope variables 
+                        (and constants) in JavaScript
                     </p>
-                    <h3>Functions</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-                        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae 
-                        est. Mauris placerat eleifend leo
+                    <p>The general rules for constructing names for variables (unique identifiers) are:</p>
+                    <ul>
+                        <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+                        <li>Names must begin with a letter</li>
+                        <li>Names are case sensitive (y and Y are different variables)</li>
+                        <li>Reserved words (like JavaScript keywords) cannot be used as names</li>
+                      
+                    </ul>
+                    <h3>Strings</h3>
+                    <p>JavaScript strings are used for storing and manipulating text. A JavaScript string is zero
+                         or more characters written inside quotes.
+                         <h4>String methods and properties</h4>
+                         <p>With JavaScript, methods and properties are also available to primitive values, because 
+                             JavaScript treats primitive values as objects when executing methods and properties.</p>
+                         <p>The <i>length</i> property returns the length of a string;</p>
+                         <p>The <i>indexOf()</i> method returns the index of (the position of) the first occurrence of a 
+                             specified text in a string;</p>
+                        <p>The <i>replace()</i> method replaces a specified value with another value in a string.</p>
+
                     </p>
-                    <h3>Loops (for loop)</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-                        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae 
-                        est. Mauris placerat eleifend leo
+                    <h3>Loops</h3>
+                    <p>Loops can execute a block of code a number of times. JavaScript supports different kinds of loops:
                     </p>
-                    <h3>Objects (what's the JSON format?)</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-                        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae 
-                        est. Mauris placerat eleifend leo
+                    <ul>
+                        <li>for - loops through a block of code a number of times</li>
+                        <li>while - loops through a block of code while a specified condition is true</li>
+                        <li>do/while - also loops through a block of code while a specified condition is true</li>
+                        <li>for/in - loops through the properties of an object</li>
+                      
+                    </ul>
+                    <h3>Objects</h3>
+                    <p>There are different ways to create new objects:
                     </p>
+                    <ul>
+                        <li>Define and create a single object, using an object literal.</li>
+                        <li>Define and create a single object, with the keyword new.</li>
+                        <li>Define an object constructor, and then create objects of the constructed type.</li>
+                    </ul>
+                    <h4>Object Properties</h4>
+                    <p>Properties are the values associated with a JavaScript object. Properties can usually be 
+                        changed, added, and deleted, but some are read only.
+
+                    <h3>Hoisting</h3>
+                    <p>Hoisting is JavaScript's default behavior of moving declarations to the top. In JavaScript, 
+                    a variable can be declared after it has been used. In other words; a variable can be used
+                     before it has been declared
+                    </p>
+                    <h3>Arrow Functions</h3>
+                    <p>Arrow functions were introduced in ES6. Arrow functions allow us to write shorter function syntax:
+                    </p>
+                    <figure>
+                        <img src="images/25._before.png" alt="before-arrow-function" class="images">
+                        <figcaption id="figcaption">Before arrow function</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/26._after.png" alt="arrow-function" class="images">
+                        <figcaption id="figcaption">Using arrow function</figcaption>
+                    </figure>
                 </div>
                 <hr>
                 <div id="footer">Pedro Palma | 2020</div>
