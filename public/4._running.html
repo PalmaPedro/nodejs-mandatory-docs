@@ -37,18 +37,47 @@
                 <hr>
                 <div id="body">
                     <h2>Running Node</h2>
+                    <p>Having installed node and express, it is now time to create the javascript, which for this
+                        project it's called, app.js  It is created inside the project folder.
+                    </p>
+                    The first lines of code are used to import the express dependency needed for the webapp. This is how it
+                    is done.
+                    </p>
+                    <figure>
+                        <img src="images/8._import_express.png" alt="express" class="images">
+                        <figcaption id="figcaption">Fig.5 import express dependency</figcaption>
+                    </figure>
                     <h3>Run a webserver</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                    turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-                    amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae 
-                    est. Mauris placerat eleifend leo
+                    <p>
+                        For testing purposes a simple webserver is run to make sure it is properly set up. 
                     </p>
+                    <figure>
+                        <img src="images/10._test_server.png" alt="test-server" class="images">
+                        <figcaption id="figcaption">Fig.6 port listenning defined</figcaption>
+                </figure>
+                    <p>To make the code more readable, the bottom lines of the app.js file are dedicated to define which port number will the server be 
+                        listenning to. This app starts a server and listen to connections on port 3000. The app responds with a "test server" to requests
+                    to the root URL (/) or <b>route</b>. For every other path it will respond with a <b>404 Not Found</b></p>
+                    <figure>
+                            <img src="images/9._listen_port.png" alt="port-listen" class="images">
+                            <figcaption id="figcaption">Fig.7 port listenning defined</figcaption>
+                    </figure>
+                    
+                    <p>Now, at the command line the following is typed and it is confirmed that the server is running</p>
+                    <figure>
+                        <img src="images/11._run_node.png" alt="run-node" class="images">
+                        <figcaption id="figcaption">Fig.8 test if server is running</figcaption>
+                    </figure>
+
                     <h3>Loading static files</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-                        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae 
-                        est. Mauris placerat eleifend leo
+                    <p>For this project there are static files like the css style file that needs to be loaded so the html contents styling can
+                        be properly displayed on the web browser. 
                     </p>
+                    <figure>
+                        <img src="images/12._static_files.png" alt="static" class="images">
+                        <figcaption id="figcaption">Fig.8 test if server is running</figcaption>
+                    </figure>
+
                     <h3>Serving files</h3>
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
                         turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit

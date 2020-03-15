@@ -1,7 +1,7 @@
 //import express
 const express = require ("express");
 const app = express();
-//const request = require("request");
+const request = require("request");
 
 // load css file
 app.use(express.static('public'));
@@ -72,5 +72,4 @@ app.listen(3000, error =>{
     } else{
         console.log("server is running on port", 3000);
     }
-
 });
